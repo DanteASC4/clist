@@ -7,19 +7,34 @@
 ### TOC
 ---
 - Description of Clist
+- Server side
 - List of current functionality
 - WIP / Goals
 - Function documentation
 
 ### Description
 ---
-Why is the npm package called cli-list if it's called clist? Because clist is taken!
+Why is the npm package called cli-tasklist if it's called clist? Because the name clist is taken!
 Clist is a command line interface / application for creating to-do lists by communicating with a webhosted sql database.
 Why a CLI? I wanted to make something that would be fast, and wouldn't require much loading. Something that you could use
 inbetween git pushes to check on what you still need to get done, or after a break if you've forgotten what you're working on,
-even to start off the morning and get going quickly. Currently the Functionality is limited to me, as it's setup to communicate with one database.
-I of course want to make this available for use for anyone, but I've gotta get everything working first.
+even to start off the morning and get going quickly.
 
+### Server side
+---
+First off by default the program is set to a glitch hosted server with a simple sqlite database. The server file can be found
+on the github for this project located [here](https://github.com/DanteASC4/clist). The file is named server.js, and you can make
+your own glitch hosted sql db pretty easily. It's free too! Or you can use it on your own server or however you like really, it's up to you.
+The server dependencies are as follows:
+- Express
+- sqlite3
+- moment
+- nodemailer
+- node-schedule
+
+**Note** If you do make your own sql db and want to use that instead, be sure to change the base URLs in index.js
+Also currently the server.js file is the only thing being used on glitch, I might make this a webapp at some point but currently I'm working
+on finishing everything else first.
 
 
 ### Current Functionality

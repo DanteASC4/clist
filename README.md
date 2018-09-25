@@ -48,9 +48,8 @@ on finishing everything else first.
 
 
 
-### WIP
----
-#### Short-term larger scale changes
+
+#### Short-term larger scale goals
 - Login system
 - Daily email
 
@@ -63,7 +62,7 @@ on finishing everything else first.
   - If user says yes to wanting to add more recipients, askes for how many more, and then does for i in num_of_recipients etc...
 - Make a better "item has been received response"
 
-#### Long term
+#### Long term goals
 - All in one bundle, download and becomes useable
 - Users have separate to-do lists
   - Maybe allow users to have more than one to-do list,
@@ -97,8 +96,10 @@ Item is then sent and added to list
 ##### Modify list item
 ```javascript
 clist m
-//User then chooses item to be modified, and then the column value for said item they'd like to change, and prompted for the new value.
+
 ```
+User then chooses item to be modified, then prompted to choose the column for said item they'd like to change,
+and finally prompted for the new value.
 Item is then modified in database
 
 ----
@@ -115,8 +116,8 @@ Item is then deleted from the database. ** Cannot be undone **
 ##### Email list items
 ```javascript
 clist e
-//User is prompted for email, and then asked if they'd to add more like more email addresses
 ```
+User is prompted for email, and then asked if they'd to add more like more email addresses
 Entered recipients are then emailed the entire to-do list
 
 ---

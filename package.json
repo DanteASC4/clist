@@ -1,6 +1,6 @@
 {
   "name": "cli-tasklist",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "cli to-do list",
   "main": "index.js",
   "scripts": {

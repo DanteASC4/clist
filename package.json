@@ -1,5 +1,5 @@
 {
-  "name": "clist",
+  "name": "cli-list",
   "version": "1.0.0",
   "description": "cli to-do list",
   "main": "index.js",

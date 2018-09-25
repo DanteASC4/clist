@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+/**
+ * Project name: Clist
+ * Owner/creator: Dante Rivera
+ * Description: This is a js cli/app that communicates with an online database allowing the user to create a to-do list, all from the command line.
+ * For a full documentation please visit
+ */
 const chalk = require('chalk')
 const clear = require('clear')
 const figlet = require('figlet')
@@ -15,9 +21,6 @@ let moment = require('moment')
 let program = require('commander')
 let nodemailer = require('nodemailer')
 let ip = require('ip')
-
-// let ui = new inquirer.ui.BottomBar();
-// let loading = new Spinner('Loading...  ', ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷']);
 
 
 /**
@@ -144,7 +147,7 @@ const questions = [{
   {
     type: 'input',
     name: 'due',
-    message: 'Enter the due date in mm-dd-yyyy form:  ',
+    message: 'Enter the due date in mm/dd/yyyy form:  ',
     validate: function validateDate(due) {
       if (!/^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/.test(due)) {
         return 'Invalid date format'
